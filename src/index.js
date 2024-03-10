@@ -6,8 +6,11 @@ import App from "./components/App";
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
-  dsn: "https://2f4e649d19e64637903b24e784c7a4f2@o4505201972871168.ingest.sentry.io/4505523376553985",
-  integrations: [new Sentry.BrowserTracing({}), new Sentry.Replay()],
+  dsn: "https://2e7736cae04fd71ab2f4ea663b8fe72b@o4506878047944704.ingest.us.sentry.io/4506885491261440",
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.replayIntegration({}),
+  ],
 
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.

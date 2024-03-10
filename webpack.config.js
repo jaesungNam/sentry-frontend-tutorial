@@ -8,13 +8,13 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
   },
-    devtool: "source-map",
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
     sentryWebpackPlugin({
-      org: "viv-ip",
+      org: "overpowerman-b5",
       project: "frontend-tutorial",
 
       // Auth tokens can be obtained by creating an internal integration
