@@ -78,6 +78,7 @@ class App extends Component {
   }
 
   resetCart(event) {
+    this.aaaaa('d')
     event.preventDefault();
     this.setState({ cart: [], hasError: false, success: false });
 
